@@ -1,8 +1,11 @@
 import React from 'react'
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 
 
 function Services() {
+  const navigate = useNavigate()
+
   return (
     <section id="services" class="services section">
 
@@ -27,9 +30,13 @@ function Services() {
 
               <i class="bi bi-activity"></i>
               
-=
+
             </div>
-            <a href="/servicesdetails/1" class="stretched-link">
+            <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/servicesdetails/1")
+                }} 
+             href="#" class="stretched-link">
               <h3>Frontend</h3>
             </a>
             <p>Creation of responsive and dynamic websites using HTML, CSS, and JavaScript.
@@ -47,7 +54,11 @@ function Services() {
               </svg>
               <i class="bi bi-broadcast"></i>
             </div>
-            <a href="/servicesdetails/2" class="stretched-link">
+            <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/servicesdetails/2")
+                }} 
+             href="#" class="stretched-link">
               <h3>Backend</h3>
             </a>
             <p>Building RESTful APIs with Node.js and Express.js.
@@ -65,7 +76,11 @@ function Services() {
               </svg>
               <i class="bi bi-easel"></i>
             </div>
-            <a href="/servicesdetails/3" class="stretched-link">
+            <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/servicesdetails/3")
+                }}  
+            href="#" class="stretched-link">
               <h3>Full-Stack </h3>
             </a>
             <p>Developing complete web applications with both frontend and backend components.

@@ -1,13 +1,14 @@
 import React from 'react'
 import { GoZoomIn } from "react-icons/go";
 import { CiLink } from "react-icons/ci";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 import './style.css';
 
 function Portfolio() {
+  const navigate = useNavigate()
   return (
     <section id="portfolio" class="portfolio section">
 
@@ -46,15 +47,15 @@ function Portfolio() {
                 {/* <a href="assets/img/uspjqh5kfaglpycsftrs.jpg" title="Libero X250"
                   data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                     ><GoZoomIn /></i></a> */}
-                <a href="/portfoliodetails/1"  title="More Details" class="details-link"><i
+                <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/portfoliodetails/1")
+                }} 
+                href="#" 
+                 title="More Details" class="details-link"><i
                     ><CiLink /></i></a>
               </div>
             </div>
-
-
-
-
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
               <img src="assets/img/1714619555840.jpg" class="img-fluid" alt=""/>
               <div class="portfolio-info">
@@ -62,7 +63,11 @@ function Portfolio() {
                 <p>Developed Web site Ledjo Professional Ambient lighting</p>
                 {/* <a href="assets/img/lhxoyylhbzouc7cc0nnm.avif" title="Diamond Tweeter"
                   data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> */}
-                <a href="/portfoliodetails/2" title="More Details" class="details-link"><i
+                <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/portfoliodetails/2")
+                }} 
+                 href="#" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div>
