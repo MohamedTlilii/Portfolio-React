@@ -93,39 +93,39 @@ Here are some screenshots from my portfolio:
 
 ### Homepage
 
-![Homepage](/assets/Ss/1.png)
+![Homepage](/public/assets/Ss/1.png)
 
 ### About Section
 
-![About](/assets/Ss/2.png)
+![About](/public/assets/Ss/2.png)
 
 ### Skills Section
 
-![Skills](/assets/Ss/3.png)
+![Skills](/public/assets/Ss/3.png)
 
 ### Resume Section
 
-![Resume](/assets/Ss/4.png)
-![Resume](/assets/Ss/5.png)
+![Resume](/public/assets/Ss/4.png)
+![Resume](/public/assets/Ss/5.png)
 
 ### Portfolio Section
 
-![Portfolio](/assets/Ss/6.png)
-![Portfolio](/assets/Ss/6.1.png)
-![Portfolio](/assets/Ss/6.2.png)
-![Portfolio](/assets/Ss/6.3.png)
-![Portfolio](/assets/Ss/6.4.png)
+![Portfolio](/public/assets/Ss/6.png)
+![Portfolio](/public/assets/Ss/6.1.png)
+![Portfolio](/public/assets/Ss/6.2.png)
+![Portfolio](/public/assets/Ss/6.3.png)
+![Portfolio](/public/assets/Ss/6.4.png)
 
 ### Services Section
 
-![Services](/assets/Ss/7.png)
-![Services](/assets/Ss/7.1.png)
-![Services](/assets/Ss/7.2.png)
-![Services](/assets/Ss/7.3.png)
+![Services](assets/Ss/7.png)
+![Services](/public/assets/Ss/7.1.png)
+![Services](/public/assets/Ss/7.2.png)
+![Services](/public/assets/Ss/7.3.png)
 
 ### Contact Form
 
-![Experience](/assets/Ss/8.png)
+![Experience](/public/assets/Ss/8.png)
 
 Feel free to browse through the screenshots to get a visual overview of my portfolio project.
 
