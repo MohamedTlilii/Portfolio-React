@@ -24,9 +24,7 @@ useEffect(()=>{
 
   return (
     <div>
-      {/* Pass activeSection to Hero component */}
       <Hero    />
-      {/* Pass setActiveSection to child components */}
       <About />
       <Skills />
       <Resume />

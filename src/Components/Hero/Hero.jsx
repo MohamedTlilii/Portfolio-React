@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import './style.css';
 
 function Hero({ activeSection }) {
-  const words = ['Developer', 'Designer', 'Freelancer'];
+  const words = ['Developer', 'Freelancer'];
   const [currentWord, setCurrentWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
