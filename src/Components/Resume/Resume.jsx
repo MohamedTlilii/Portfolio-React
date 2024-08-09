@@ -42,14 +42,32 @@ function Resume() {
           </div>
 
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="resume-title">Professional Experience & Internship</h3>
+            <h3 className="resume-title">Professional Experience </h3>
             
             
 
             <div className="resume-item">
-              <h4>FullStack JS Web Developer</h4>
-              <h5>2024 - Present</h5>
-              <p><em>Karriery-Internship</em></p>
+              <h4>Front-End Developer</h4>
+              <h5>August 2024 - Present</h5>
+              <p><em>Karriery</em></p>
+              <ul>
+                <li>Collaborate on tasks via Microsoft Teams platform to improve and optimize the user interface, ensuring a seamless and visually appealing experience.</li>
+                {/* <li>Developed a responsive portfolio</li>
+                <li>Developed a responsive portfolio React</li>
+                <li>Learned Angular TypeScript, Nest.js, PostgresSQL</li> */}
+                {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li> */}
+                
+              </ul>
+            </div>
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 className="resume-title">Internship</h3>
+            
+            
+
+            <div className="resume-item">
+              <h4>FullStack</h4>
+              <h5>May 2024-August 2024</h5>
+              <p><em>Karriery</em></p>
               <ul>
                 <li>Enhanced problem-solving skills</li>
                 <li>Developed a responsive portfolio</li>
@@ -61,6 +79,8 @@ function Resume() {
             </div>
 
           </div>
+          </div>
+         
 
         </div>
 

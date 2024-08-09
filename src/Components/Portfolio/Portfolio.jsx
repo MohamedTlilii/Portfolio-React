@@ -84,7 +84,21 @@ function Portfolio() {
 
 
 
-
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
+              <img src="assets/img/ytssss.png" class="img-fluid" alt=""/>
+              <div class="portfolio-info">
+                <h4>YTS</h4>
+                <p>YTS Movies Torrents website. Download free movies torrents in 720p, 1080p and 3D quality.</p>
+                {/* <a href="assets/img/lhxoyylhbzouc7cc0nnm.avif" title="Diamond Tweeter"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> */}
+                <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/portfoliodetails/3")
+                }} 
+                 href="#" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
 
 
           </div>

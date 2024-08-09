@@ -19,7 +19,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/3.jpg",
         "/assets/img/portfolio/4.jpg"
       ],
-      description: "Developed Web site with React using JavaScript. It includes both user and admin panels. Users can place orders, track their status, while admins manage product status and view orders. Guided by Mohamed Anwer Jabri from Gomycode.",
+      description: "Developed Web site using the MERN stack . It includes both user and admin panels. Users can place orders, track their status, while admins manage product status and view orders. Guided by Mohamed Anwer Jabri from Gomycode.",
       category: "E-Commerce",
       client: "Final Project",
       projectDate: "01 January, 2024",
@@ -34,11 +34,25 @@ function PortfolioDetails() {
         "/assets/img/portfolio/7.avif",
         "/assets/img/portfolio/8.avif"
       ],
-      description: "Developed Web site Ledjo Professional Ambient lighting using React and JavaScript. It has user and admin panels, advanced features, and a great user experience.",
+      description: "I built a website for a professional ambient lighting service using the MERN stack: MongoDB, Express, React, and Node.js. The site has user and admin panels. Users can place and track orders, while admins manage products and oversee orders.",
       category: "E-Commerce",
       client: "ledjo Company",
       projectDate: "15 March, 2024",
       projectUrl: "https://6633042324494d5c1438c840--ledjo.netlify.app/"
+    }, {
+      id: 3,
+      title: "YTS",
+      pictures: [
+        "/assets/img/portfolio/9.png",
+        "/assets/img/portfolio/10.png",
+        "/assets/img/portfolio/11.png",
+        "/assets/img/portfolio/12.png"
+      ],
+      description: "I developed a YTS Movies Torrents website using the MERN stack (MongoDB, Express, React, Node.js), along with Chakra UI and SASS for styling. The website allows users to download free movie torrents in 720p, 1080p, and 3D quality. The interface is user-friendly, with sleek designs powered by Chakra UI and custom styles using SASS. ",
+      category: "Torrents website",
+      client: "karriery",
+      projectDate: "1 July, 2024",
+      projectUrl: ""
     },
   ];
 

@@ -36,7 +36,10 @@ function Hero({ activeSection }) {
   return (
     <section id="hero" className={`hero section ${activeSection === 'hero' ? 'active' : ''}`}>
       {/* Your Hero component content */}
-      <img src="assets/img/cover-Photoroom.png" alt="Hero Cover" />
+      {/* <img src="assets/img/cover-Photoroom.png" alt="Hero Cover" /> */}
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json" background="transparent" speed="1"   loop autoplay></dotlottie-player>
       <div className="container" data-aos="zoom-out">
         <div className="row justify-content-center">
           <div className="col-lg-9">
