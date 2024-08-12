@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-
+// ze
 function Skills() {
   const skills = [
     { name: 'GIT', level: 80 },
