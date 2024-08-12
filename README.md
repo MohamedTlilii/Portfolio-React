@@ -119,7 +119,7 @@ Here are some screenshots from my portfolio:
 
 ### Services Section
 
-![Services](assets/Ss/7.png)
+![Services](/public/assets/Ss/7.png)
 ![Services](/public/assets/Ss/7.1.png)
 ![Services](/public/assets/Ss/7.2.png)
 ![Services](/public/assets/Ss/7.3.png)
