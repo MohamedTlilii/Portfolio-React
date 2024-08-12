@@ -52,7 +52,7 @@ function PortfolioDetails() {
       category: "Torrents website",
       client: "karriery",
       projectDate: "1 July, 2024",
-      projectUrl: ""
+      projectUrl: "https://ytsyify.netlify.app/"
     },
   ];
 
