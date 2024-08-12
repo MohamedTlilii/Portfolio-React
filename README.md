@@ -115,6 +115,7 @@ Here are some screenshots from my portfolio:
 ![Portfolio](/public/assets/Ss/6.2.png)
 ![Portfolio](/public/assets/Ss/6.3.png)
 ![Portfolio](/public/assets/Ss/6.4.png)
+![Portfolio](/public/assets/Ss/6.5.png)
 
 ### Services Section
 
