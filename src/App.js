@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ServicesDetails from './Page/ServicesDetails/ServicesDetails';
 import PublicLayout from './Layout/PublicLayout';
@@ -56,25 +55,11 @@ function App() {
       lottieSrc: 'https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json',
     },
   ];
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      // Set a timeout to delay the removal of the preloader
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1000); // Adjust the delay (in milliseconds) as needed
-    };
-    window.addEventListener('load', handleLoad);
-
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
-  }, []);
+ 
 
   return (
     <>
-      {/* {isLoading && <div id="preloader"></div>} */}
       <Routes>
         <Route path='/' element={<PublicLayout />}>
           <Route index element={<LandingPage />} />
