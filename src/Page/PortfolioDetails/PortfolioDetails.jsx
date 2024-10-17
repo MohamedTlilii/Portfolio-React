@@ -57,6 +57,22 @@ function PortfolioDetails() {
     },
     {
       id: 4,
+      title: "BEST-CAR",
+      pictures: [
+        "/assets/img/portfolio/1.png",
+        "/assets/img/portfolio/2.png",
+        "/assets/img/portfolio/3.png",
+        "/assets/img/portfolio/4.png",
+        "/assets/img/portfolio/5.png"
+      ],
+      description: "Developed an admin dashboard for a car rental service using React, TypeScript, Nest.js, and Node.js. Admins can add, delete, and manage products and events.",
+      category: "",
+      client: "BEST-CAR",
+      projectDate: "6 September , 2024",
+      projectUrl: ""
+    },
+    {
+      id: 5,
       title: "Centre-Descartes",
       pictures: [
         "/assets/img/portfolio/13.png",

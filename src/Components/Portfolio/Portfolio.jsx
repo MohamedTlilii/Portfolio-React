@@ -103,17 +103,12 @@ function Portfolio() {
               </div>
             </div>
 
-
-
-
-
-
-
+         
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
-              <img src="assets/img/13.png" class="img-fluid" alt=""/>
+              <img src="assets/img/1.png" class="img-fluid" alt=""/>
               <div class="portfolio-info">
-                <h4>Centre-Descartes</h4>
-                <p>Developed and deployed a modern, responsive website for Centre Descartes.</p>
+                <h4>BEST-CAR</h4>
+                <p>Developed an admin dashboard for a car rental service.</p>
                 {/* <a href="assets/img/lhxoyylhbzouc7cc0nnm.avif" title="Diamond Tweeter"
                   data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> */}
                 <a onClick={(e)=>{
@@ -125,6 +120,39 @@ function Portfolio() {
               </div>
             </div>
 
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
+              <img src="assets/img/13.png" class="img-fluid" alt=""/>
+              <div class="portfolio-info">
+                <h4>Centre-Descartes</h4>
+                <p>Developed and deployed a modern, responsive website for Centre Descartes.</p>
+                {/* <a href="assets/img/lhxoyylhbzouc7cc0nnm.avif" title="Diamond Tweeter"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> */}
+                <a onClick={(e)=>{
+                  e.preventDefault()
+                  navigate("/portfoliodetails/5")
+                }} 
+                 href="#" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+
+
+
+
+          
           </div>
 
         </div>
