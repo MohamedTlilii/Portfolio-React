@@ -6,15 +6,11 @@ function ScrollBtn() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      setShowButton(window.scrollY > 200);
     };
 
     window.addEventListener('scroll', handleScroll);
-
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -30,7 +26,7 @@ function ScrollBtn() {
         <div
           id="scroll-top"
           className="scroll-top"
-          style={{ position: 'fixed', bottom: '20px', right: '20px', backgroundColor: 'yellow', color: 'black', padding: '10px', borderRadius: '50%', cursor: 'pointer' }}
+          aria-label="Scroll to top"
           onClick={scrollToTop}
         >
           <i className="bi bi-arrow-up-short"></i>

@@ -11,14 +11,18 @@ import { useEffect } from "react";
 
 function LandingPage() {
     const {hash}=useLocation();
-useEffect(()=>{
- console.log(hash);
- if(hash){
-     const div = hash.slice(1)
-     document.getElementById(div)
-     .scrollIntoView({behavior:'smooth',block:'start'})
- }
-     },[hash])
+    useEffect(() => {
+      if (hash) {
+        const div = hash.slice(1);
+        const targetElement = document.getElementById(div);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          console.warn(`Element with ID "${div}" not found`);
+        }
+      }
+    }, [hash]);
+    
 
 
 
