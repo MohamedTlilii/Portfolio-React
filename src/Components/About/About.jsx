@@ -11,8 +11,9 @@ function About() {
         <div className="row gy-4 justify-content-center">
           <div className="col-lg-4">
             <img 
-              style={{ height: '450px', width: '600px' }} 
-              src="assets/img/DSC03053.jpg" 
+style={{ height: '450px', width: '600px', borderRadius: '50%' }}
+   // src="assets/img/DSC03053.jpg" 
+              src="assets/img/144147556.jpg" 
               className="img-fluid" 
               alt="About me" 
             />
