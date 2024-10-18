@@ -27,7 +27,8 @@ function Contact() {
     setErrorMessage('');
 
     emailjs
-      .sendForm('service_pl28hib', 'template_v4ccq3w', e.target, 'mzO0aBvVVsLJL9-0D')
+      // .sendForm('service_pl28hib', 'template_v4ccq3w', e.target, 'mzO0aBvVVsLJL9-0D')
+      .sendForm('service_swiv7do', 'template_bngso6s', e.target, 'TEVtqGCRInsD4HMuE')
       .then(() => {
         setSuccessMessage('Your message has been sent. Thank you!');
         setLoading(false);
