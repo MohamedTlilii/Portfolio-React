@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ServicesDetails from './Page/ServicesDetails/ServicesDetails';
 import PublicLayout from './Layout/PublicLayout';
@@ -56,13 +56,13 @@ function App() {
     },
   ];
 
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleLoad = () => {
       // Set a timeout to delay the removal of the preloader
       setTimeout(() => {
-        setIsLoading(false);
+        // setIsLoading(false);
       }, 1000); // Adjust the delay (in milliseconds) as needed
     };
     window.addEventListener('load', handleLoad);
@@ -74,7 +74,7 @@ function App() {
 
   return (
     <>
-      {isLoading && <div id="preloader"></div>}
+      {/* {isLoading && <div id="preloader"></div>} */}
       <Routes>
         <Route path='/' element={<PublicLayout />}>
           <Route index element={<LandingPage />} />

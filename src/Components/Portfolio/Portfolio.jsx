@@ -18,11 +18,12 @@ function Portfolio() {
 
             {/* Portfolio Item 1 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/1708735836555.jpg" className="img-fluid" alt="EcoRide Electric Scooter"/>
+              <img src="assets/img/1708735836555.jpg" className="img-fluid" alt="EcoRide Electric Scooter" />
               <div className="portfolio-info">
                 <h4>EcoRide</h4>
                 <p>Developed E-Commerce EcoRide Electric-Scooter</p>
                 <a 
+                  href="/portfoliodetails/1" // Added href
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/portfoliodetails/1");
@@ -38,11 +39,12 @@ function Portfolio() {
 
             {/* Portfolio Item 2 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/1714619555840.jpg" className="img-fluid" alt="LEDJO Ambient Lighting"/>
+              <img src="assets/img/1714619555840.jpg" className="img-fluid" alt="LEDJO Ambient Lighting" />
               <div className="portfolio-info">
                 <h4>LEDJO</h4>
                 <p>Developed Website for Ledjo Professional Ambient Lighting</p>
                 <a 
+                  href="/portfoliodetails/2" // Added href
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/portfoliodetails/2");
@@ -58,11 +60,12 @@ function Portfolio() {
 
             {/* Portfolio Item 3 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/ytssss.png" className="img-fluid" alt="YTS Movies Torrents"/>
+              <img src="assets/img/ytssss.png" className="img-fluid" alt="YTS Movies Torrents" />
               <div className="portfolio-info">
                 <h4>YTS</h4>
                 <p>YTS Movies Torrents website. Download free movies torrents in 720p, 1080p and 3D quality.</p>
                 <a 
+                  href="/portfoliodetails/3" // Added href
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/portfoliodetails/3");
@@ -78,11 +81,12 @@ function Portfolio() {
 
             {/* Portfolio Item 4 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/1.png" className="img-fluid" alt="BEST-CAR Admin Dashboard"/>
+              <img src="assets/img/1.png" className="img-fluid" alt="BEST-CAR Admin Dashboard" />
               <div className="portfolio-info">
                 <h4>BEST-CAR</h4>
                 <p>Developed an admin dashboard for a car rental service.</p>
                 <a 
+                  href="/portfoliodetails/4" // Added href
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/portfoliodetails/4");
@@ -98,11 +102,12 @@ function Portfolio() {
 
             {/* Portfolio Item 5 */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/13.png" className="img-fluid" alt="Centre Descartes Website"/>
+              <img src="assets/img/13.png" className="img-fluid" alt="Centre Descartes Website" />
               <div className="portfolio-info">
                 <h4>Centre-Descartes</h4>
                 <p>Developed and deployed a modern, responsive website for Centre Descartes.</p>
                 <a 
+                  href="/portfoliodetails/5" // Added href
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/portfoliodetails/5");

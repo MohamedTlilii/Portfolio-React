@@ -30,7 +30,7 @@ function Hero({ activeSection }) {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [currentWord, isDeleting, typingSpeed, wordIndex]); // Added currentWord
+  }, [currentWord, isDeleting, typingSpeed, wordIndex, words]); // Added words
 
   return (
     <section id="hero" className={`hero section ${activeSection === 'hero' ? 'active' : ''}`}>

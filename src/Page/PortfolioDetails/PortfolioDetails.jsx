@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 function PortfolioDetails() {
   const { projectId } = useParams();
   
-  // Define the projects array (consider moving this to a separate JSON file)
+  // Define the projects array (consider moving this to a separate JSON file or API)
   const projects = [
     {
       id: 1,
@@ -40,7 +40,13 @@ function PortfolioDetails() {
   const project = projects.find(proj => proj.id === parseInt(projectId));
 
   if (!project) {
-    return <div>Project not found</div>;
+    return (
+      <div className="container">
+        <h2>Project not found</h2>
+        <p>We're sorry, but the project you are looking for does not exist.</p>
+        <a href="/portfolio" className="btn btn-primary">Go back to Portfolio</a>
+      </div>
+    );
   }
 
   return (
@@ -59,7 +65,7 @@ function PortfolioDetails() {
               loop={true}
               speed={600}
               autoplay={{ delay: 5000 }}
-              slidesPerView="auto"
+              slidesPerView={1} // Fixed number of slides
               navigation={{
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
@@ -72,7 +78,10 @@ function PortfolioDetails() {
             >
               {project.pictures.map((picture, picIndex) => (
                 <SwiperSlide key={picIndex}>
-                  <img src={picture} alt={`Project ${project.title} - Image ${picIndex + 1}`} />
+                  <img 
+                    src={picture} 
+                    loading="lazy" // Lazy loading for performance
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

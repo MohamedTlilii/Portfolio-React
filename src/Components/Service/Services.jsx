@@ -18,6 +18,7 @@ function Services() {
 
       <div className="container">
         <div className="row gy-4">
+          {/* Frontend Service */}
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div className="service-item item-cyan position-relative">
               <div className="icon" role="img" aria-label="Frontend Services Icon">
@@ -33,7 +34,7 @@ function Services() {
               </div>
               <a
                 onClick={(e) => handleNavigation(e, 1)}
-                href="#"
+                href="/servicesdetails/1" // Updated href
                 className="stretched-link"
                 aria-label="Learn more about Frontend services"
                 tabIndex={0} // Make it keyboard-navigable
@@ -47,6 +48,7 @@ function Services() {
             </div>
           </div>
 
+          {/* Backend Service */}
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div className="service-item item-orange position-relative">
               <div className="icon" role="img" aria-label="Backend Services Icon">
@@ -62,7 +64,7 @@ function Services() {
               </div>
               <a
                 onClick={(e) => handleNavigation(e, 2)}
-                href="#"
+                href="/servicesdetails/2" // Updated href
                 className="stretched-link"
                 aria-label="Learn more about Backend services"
                 tabIndex={0}
@@ -76,6 +78,7 @@ function Services() {
             </div>
           </div>
 
+          {/* Full-Stack Service */}
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div className="service-item item-teal position-relative">
               <div className="icon" role="img" aria-label="Full-Stack Services Icon">
@@ -91,7 +94,7 @@ function Services() {
               </div>
               <a
                 onClick={(e) => handleNavigation(e, 3)}
-                href="#"
+                href="/servicesdetails/3" // Updated href
                 className="stretched-link"
                 aria-label="Learn more about Full-Stack services"
                 tabIndex={0}
