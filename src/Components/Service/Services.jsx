@@ -5,6 +5,11 @@ import { useNavigate } from 'react-router-dom';
 function Services() {
   const navigate = useNavigate();
 
+  const handleNavigation = (e, serviceId) => {
+    e.preventDefault();
+    navigate(`/servicesdetails/${serviceId}`);
+  };
+
   return (
     <section id="services" className="services section">
       <div className="container section-title" data-aos="fade-up">
@@ -15,7 +20,7 @@ function Services() {
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div className="service-item item-cyan position-relative">
-              <div className="icon">
+              <div className="icon" role="img" aria-label="Frontend Services Icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path
                     stroke="none"
@@ -27,13 +32,11 @@ function Services() {
                 <i className="bi bi-activity" aria-hidden="true"></i>
               </div>
               <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate('/servicesdetails/1');
-                }}
+                onClick={(e) => handleNavigation(e, 1)}
                 href="#"
                 className="stretched-link"
                 aria-label="Learn more about Frontend services"
+                tabIndex={0} // Make it keyboard-navigable
               >
                 <h3>Frontend</h3>
               </a>
@@ -46,7 +49,7 @@ function Services() {
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div className="service-item item-orange position-relative">
-              <div className="icon">
+              <div className="icon" role="img" aria-label="Backend Services Icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path
                     stroke="none"
@@ -58,13 +61,11 @@ function Services() {
                 <i className="bi bi-broadcast" aria-hidden="true"></i>
               </div>
               <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate('/servicesdetails/2');
-                }}
+                onClick={(e) => handleNavigation(e, 2)}
                 href="#"
                 className="stretched-link"
                 aria-label="Learn more about Backend services"
+                tabIndex={0}
               >
                 <h3>Backend</h3>
               </a>
@@ -77,7 +78,7 @@ function Services() {
 
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div className="service-item item-teal position-relative">
-              <div className="icon">
+              <div className="icon" role="img" aria-label="Full-Stack Services Icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path
                     stroke="none"
@@ -89,13 +90,11 @@ function Services() {
                 <i className="bi bi-easel" aria-hidden="true"></i>
               </div>
               <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate('/servicesdetails/3');
-                }}
+                onClick={(e) => handleNavigation(e, 3)}
                 href="#"
                 className="stretched-link"
                 aria-label="Learn more about Full-Stack services"
+                tabIndex={0}
               >
                 <h3>Full-Stack</h3>
               </a>

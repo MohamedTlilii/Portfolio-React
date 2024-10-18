@@ -30,11 +30,11 @@ function Hero({ activeSection }) {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [currentWord, isDeleting, typingSpeed, wordIndex]);
+  }, [currentWord, isDeleting, typingSpeed, wordIndex]); // Added currentWord
 
   return (
     <section id="hero" className={`hero section ${activeSection === 'hero' ? 'active' : ''}`}>
-      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
       <dotlottie-player 
         src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json" 
         background="transparent" 
@@ -47,17 +47,17 @@ function Hero({ activeSection }) {
           <div className="col-lg-9">
             <h2>MOHAMED TLILI</h2>
             <p>
-              I'm <span className="typed">{currentWord}</span>
+              I'm <span className="typed" aria-live="polite">{currentWord}</span>
               <span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
             </p>
             <div className="social-links">
-              <a href="https://www.facebook.com/mohamed.tliliiiii/" aria-label="Facebook Profile">
+              <a href="https://www.facebook.com/mohamed.tliliiiii/" aria-label="Facebook Profile" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
-              <a href="https://github.com/MohamedTlilii?tab=repositories" aria-label="GitHub Profile">
+              <a href="https://github.com/MohamedTlilii?tab=repositories" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/mohamed-tlili-/" aria-label="LinkedIn Profile">
+              <a href="https://www.linkedin.com/in/mohamed-tlili-/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
             </div>
