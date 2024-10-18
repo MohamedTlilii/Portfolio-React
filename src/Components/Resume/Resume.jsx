@@ -22,7 +22,7 @@ function Resume() {
               <ul>
                 <li>Tunisia</li>
                 <li>+216 29 572 401</li>
-                <li>Mohamedtlili1995@hotmail.com</li>
+                <li>Mohamedtlili1995@hotmail.com</li> {/* Choose one email */}
               </ul>
             </div>
 
@@ -43,45 +43,31 @@ function Resume() {
 
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 className="resume-title">Professional Experience </h3>
-            
-            
 
             <div className="resume-item">
-              <h4>Front-End Developer</h4>
+              <h4>Full-stack Developer</h4> {/* Adjusted title here */}
               <h5>August 2024 - Present</h5>
               <p><em>Karriery</em></p>
               <ul>
-                <li>Collaborate on tasks via Microsoft Teams platform to improve and optimize the user interface, ensuring a seamless and visually appealing experience.</li>
-                {/* <li>Developed a responsive portfolio</li>
-                <li>Developed a responsive portfolio React</li>
-                <li>Learned Angular TypeScript, Nest.js, PostgresSQL</li> */}
-                {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li> */}
-                
+                <li>Built an admin dashboard for managing car listings using React, TypeScript, Node.js, and NestJS.
+                </li>
+                <li>Rebuild website for Centre Descartes Soutien Scolaire.
+                </li>
               </ul>
             </div>
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="resume-title">Internship</h3>
             
-            
-
             <div className="resume-item">
-              <h4>FullStack</h4>
-              <h5>May 2024-August 2024</h5>
+              <h4>FullStack Intern</h4>
+              <h5>May 2024 - August 2024</h5>
               <p><em>Karriery</em></p>
               <ul>
-                <li>Enhanced problem-solving skills</li>
                 <li>Developed a responsive portfolio</li>
-                <li>Developed a responsive portfolio React</li>
-                <li>Learned Angular TypeScript, Nest.js, PostgresSQL</li>
-                {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li> */}
-                
+                <li>Learned Angular, TypeScript, Nest.js, and PostgreSQL</li>
+                <li>Created a website for YTS movie torrents.
+                </li>
               </ul>
             </div>
-
           </div>
-          </div>
-         
-
         </div>
 
       </div>
@@ -89,3 +75,5 @@ function Resume() {
     </section>
   );
 }
+
+export default Resume;

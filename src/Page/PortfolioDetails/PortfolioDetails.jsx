@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import './style.css';
 import 'swiper/css';
 import 'swiper/css/bundle';
 
@@ -19,7 +18,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/3.jpg",
         "/assets/img/portfolio/4.jpg"
       ],
-      description: "Developed Web site using the MERN stack . It includes both user and admin panels. Users can place orders, track their status, while admins manage product status and view orders. Guided by Mohamed Anwer Jabri from Gomycode.",
+      description: "Developed Web site using the MERN stack. It includes both user and admin panels. Users can place orders, track their status, while admins manage product status and view orders. Guided by Mohamed Anwer Jabri from Gomycode.",
       category: "E-Commerce",
       client: "Final Project",
       projectDate: "01 January, 2024",
@@ -36,15 +35,11 @@ function PortfolioDetails() {
       ],
       description: "I built a website for a professional ambient lighting service using the MERN stack: MongoDB, Express, React, and Node.js. The site has user and admin panels. Users can place and track orders, while admins manage products and oversee orders.",
       category: "E-Commerce",
-      client: "ledjo Company",
+      client: "LEDJO Company",
       projectDate: "15 March, 2024",
       projectUrl: "https://6633042324494d5c1438c840--ledjo.netlify.app/"
-<<<<<<< HEAD
-    }, 
+    },
     {
-=======
-    }, {
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
       id: 3,
       title: "YTS",
       pictures: [
@@ -53,13 +48,12 @@ function PortfolioDetails() {
         "/assets/img/portfolio/11.png",
         "/assets/img/portfolio/12.png"
       ],
-      description: "I developed a YTS Movies Torrents website using the MERN stack (MongoDB, Express, React, Node.js), along with Chakra UI and SASS for styling. The website allows users to download free movie torrents in 720p, 1080p, and 3D quality. The interface is user-friendly, with sleek designs powered by Chakra UI and custom styles using SASS. ",
+      description: "I developed a YTS Movies Torrents website using the MERN stack (MongoDB, Express, React, Node.js), along with Chakra UI and SASS for styling. The website allows users to download free movie torrents in 720p, 1080p, and 3D quality. The interface is user-friendly, with sleek designs powered by Chakra UI and custom styles using SASS.",
       category: "Torrents website",
-      client: "karriery",
+      client: "Karriery",
       projectDate: "1 July, 2024",
       projectUrl: "https://ytsyify.netlify.app/"
     },
-<<<<<<< HEAD
     {
       id: 4,
       title: "BEST-CAR",
@@ -71,9 +65,9 @@ function PortfolioDetails() {
         "/assets/img/portfolio/5.png"
       ],
       description: "Developed an admin dashboard for a car rental service using React, TypeScript, Nest.js, and Node.js. Admins can add, delete, and manage products and events.",
-      category: "",
+      category: "Car Rental",
       client: "BEST-CAR",
-      projectDate: "6 September , 2024",
+      projectDate: "6 September, 2024",
       projectUrl: ""
     },
     {
@@ -85,14 +79,12 @@ function PortfolioDetails() {
         "/assets/img/portfolio/15.png",
         "/assets/img/portfolio/16.png"
       ],
-      description: "Developed and deployed a modern, responsive website for Centre Descartes, optimizing user experience and performance across devices. ",
-      category: "",
+      description: "Developed and deployed a modern, responsive website for Centre Descartes, optimizing user experience and performance across devices.",
+      category: "Educational",
       client: "Centre Descartes",
       projectDate: "1 October, 2024",
       projectUrl: "https://singular-cascaron-adc69f.netlify.app/"
     },
-=======
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
   ];
 
   // Reference for Swiper instance
@@ -115,10 +107,11 @@ function PortfolioDetails() {
   // Find the project based on the project ID
   const project = projects.find(proj => proj.id === parseInt(projectId));
 
-// Check if projectId exists and fetch the project details accordingly
-if (!projectId || isNaN(parseInt(projectId))) {
-  return <div>Project not found</div>;
-}
+  // Check if projectId exists and fetch the project details accordingly
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
   return (
     <div>
       <div className="page-title" data-aos="fade">
@@ -173,7 +166,9 @@ if (!projectId || isNaN(parseInt(projectId))) {
                     <li><strong>Client:</strong> {project.client}</li>
                     <li><strong>Project date:</strong> {project.projectDate}</li>
                     <li><strong>Project URL:</strong> <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'hsl(209, 58%, 50%)' }}>{project.projectUrl}</a></li>
-                    <li><a href={project.projectUrl} className="btn-visit align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a></li>
+                    {project.projectUrl && (
+                      <li><a href={project.projectUrl} className="btn-visit align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a></li>
+                    )}
                   </ul>
                 </div>
               </div>

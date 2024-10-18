@@ -1,4 +1,3 @@
-import Header from "../../Components/Header/Header"
 import Hero from "../../Components/Hero/Hero"
 import About from '../../Components/About/About';
 import Skills from '../../Components/Skills/Skills';
@@ -11,7 +10,6 @@ import { useEffect } from "react";
 
 function LandingPage() {
     const {hash}=useLocation();
-<<<<<<< HEAD
     useEffect(() => {
       if (hash) {
         const div = hash.slice(1);
@@ -24,7 +22,6 @@ function LandingPage() {
       }
     }, [hash]);
     
-=======
 useEffect(()=>{
  console.log(hash);
  if(hash){
@@ -33,7 +30,6 @@ useEffect(()=>{
      .scrollIntoView({behavior:'smooth',block:'start'})
  }
      },[hash])
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
 
 
 

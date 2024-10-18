@@ -34,7 +34,7 @@ function About() {
                   <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
                   {/* <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li> */}
                   <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>Mohamedtlili1995@hotmail.com</span>
+                    <span>tlilimohameddev@hotmail.com</span>
                   </li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>

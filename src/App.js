@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-=======
 import React, { useState, useEffect } from 'react';
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
 import { Route, Routes } from 'react-router-dom';
 import ServicesDetails from './Page/ServicesDetails/ServicesDetails';
 import PublicLayout from './Layout/PublicLayout';
 import './App.css';
-// import AppRoutes from './AppRoutes';
 import LandingPage from './Page/LandingPage/LandingPage';
 import PortfolioDetails from './Page/PortfolioDetails/PortfolioDetails';
 
@@ -59,13 +55,7 @@ function App() {
       lottieSrc: 'https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json',
     },
   ];
-<<<<<<< HEAD
 
- 
-
-  return (
-    <>
-=======
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -85,14 +75,12 @@ function App() {
   return (
     <>
       {isLoading && <div id="preloader"></div>}
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
       <Routes>
         <Route path='/' element={<PublicLayout />}>
           <Route index element={<LandingPage />} />
           <Route path='portfoliodetails/:projectId?' element={<PortfolioDetails />} />
           <Route path='servicesdetails/:serviceId?' element={<ServicesDetails servicesData={servicesData} />} />
         </Route>
-
       </Routes>
     </>
   );

@@ -6,23 +6,12 @@ function ScrollBtn() {
 
   useEffect(() => {
     const handleScroll = () => {
-<<<<<<< HEAD
       setShowButton(window.scrollY > 200);
     };
 
     window.addEventListener('scroll', handleScroll);
-    
-=======
-      if (window.scrollY > 200) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll);
-
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
+    // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -38,12 +27,18 @@ function ScrollBtn() {
         <div
           id="scroll-top"
           className="scroll-top"
-<<<<<<< HEAD
           aria-label="Scroll to top"
-=======
-          style={{ position: 'fixed', bottom: '20px', right: '20px', backgroundColor: 'yellow', color: 'black', padding: '10px', borderRadius: '50%', cursor: 'pointer' }}
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
-          onClick={scrollToTop}
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            backgroundColor: 'yellow',
+            color: 'black',
+            padding: '10px',
+            borderRadius: '50%',
+            cursor: 'pointer'
+          }}
+          onClick={scrollToTop} // Correct placement of the onClick handler
         >
           <i className="bi bi-arrow-up-short"></i>
         </div>

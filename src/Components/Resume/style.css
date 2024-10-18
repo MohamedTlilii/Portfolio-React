@@ -24,10 +24,8 @@
   }
   
   .resume .resume-item h4 {
-<<<<<<< HEAD
     
-=======
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
+
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
@@ -45,11 +43,9 @@
   }
   
   .resume .resume-item ul {
-<<<<<<< HEAD
     /* border: 2px solid red; */
     width: 600px;
-=======
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
+
     padding-left: 20px;
   }
   
@@ -62,10 +58,7 @@
   }
   
   .resume .resume-item::before {
-<<<<<<< HEAD
     
-=======
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
     content: "";
     position: absolute;
     width: 16px;

@@ -29,16 +29,11 @@ function Hero({ activeSection }) {
     };
 
     const timer = setTimeout(handleTyping, typingSpeed);
-<<<<<<< HEAD
-=======
-
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
     return () => clearTimeout(timer);
   }, [currentWord, isDeleting, typingSpeed, wordIndex]);
 
   return (
     <section id="hero" className={`hero section ${activeSection === 'hero' ? 'active' : ''}`}>
-<<<<<<< HEAD
       <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
       <dotlottie-player 
         src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json" 
@@ -50,24 +45,12 @@ function Hero({ activeSection }) {
       <div className="container" data-aos="zoom-out">
         <div className="row justify-content-center">
           <div className="col-lg-9">
-            <h1>MOHAMED TLILI</h1>
-=======
-      {/* Your Hero component content */}
-      {/* <img src="assets/img/cover-Photoroom.png" alt="Hero Cover" /> */}
-      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json" background="transparent" speed="1"   loop autoplay></dotlottie-player>
-      <div className="container" data-aos="zoom-out">
-        <div className="row justify-content-center">
-          <div className="col-lg-9">
             <h2>MOHAMED TLILI</h2>
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
             <p>
               I'm <span className="typed">{currentWord}</span>
               <span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
             </p>
             <div className="social-links">
-<<<<<<< HEAD
               <a href="https://www.facebook.com/mohamed.tliliiiii/" aria-label="Facebook Profile">
                 <FaFacebook />
               </a>
@@ -77,11 +60,6 @@ function Hero({ activeSection }) {
               <a href="https://www.linkedin.com/in/mohamed-tlili-/" aria-label="LinkedIn Profile">
                 <FaLinkedin />
               </a>
-=======
-              <a href="https://www.facebook.com/mohamed.tliliiiii/"><i><FaFacebook /></i></a>
-              <a href="https://github.com/MohamedTlilii?tab=repositories"><i><FaGithub /></i></a>
-              <a href="https://www.linkedin.com/in/mohamed-tlili-/"><i><FaLinkedin /></i></a>
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
             </div>
           </div>
         </div>
