@@ -22,7 +22,7 @@ function Resume() {
               <ul>
                 <li>Tunisia</li>
                 <li>+216 29 572 401</li>
-                <li>Mohamedtlili1995@hotmail.com</li> {/* Choose one email */}
+                <li>tlilimohameddev@hotmail.com</li> {/* Choose one email */}
               </ul>
             </div>
 

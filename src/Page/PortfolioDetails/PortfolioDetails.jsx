@@ -21,11 +21,77 @@ function PortfolioDetails() {
       description: "Developed a website using the MERN stack, including user and admin panels.",
       category: "E-Commerce",
       client: "Final Project",
-      projectDate: "01 January, 2024",
+      projectDate: "January, 2024",
       projectUrl: "https://eco-ride-electric-scooter.netlify.app/"
     },
-    // Add other projects here...
-  ];
+    {
+      id:  2,
+      title: "LEDJO",
+      pictures: [
+       
+        "/assets/img/portfolio/5.avif",
+        "/assets/img/portfolio/6.avif",
+        "/assets/img/portfolio/7.avif",
+        "/assets/img/portfolio/8.avif"
+
+      ],
+      description: "Built a website for an ambient lighting service using the MERN stack. It features user and admin panels, allowing users to place and track orders while admins manage products.",
+      category: "E-Commerce",
+      client: "LEDJO Company",
+      projectDate: "March , 2024",
+      projectUrl: "https://ledjo.netlify.app/"
+    }, 
+    {
+      id:  3,
+      title: "YTS",
+      pictures: [
+       
+        "/assets/img/portfolio/9.png",
+        "/assets/img/portfolio/10.png",
+        "/assets/img/portfolio/11.png",
+        "/assets/img/portfolio/12.png"
+
+      ],
+      description: "Created a YTS Movies Torrents website using the MERN stack (MongoDB, Express, React, Node.js), with Chakra UI and SASS for styling. Users can download movies in various qualities with a user-friendly interface.",
+      category: "",
+      client: "",
+      projectDate: "July, 2024",
+      projectUrl: "https://ytsyify.netlify.app/"
+    }, 
+    {
+      id:  4,
+      title: "BEST-CAR",
+      pictures: [
+       
+        "/assets/img/portfolio/2.png",
+        "/assets/img/portfolio/3.png",
+        "/assets/img/portfolio/4.png",
+        "/assets/img/portfolio/5.png"
+
+      ],
+      description: "Developed an admin dashboard for a car rental service using React, TypeScript, Nest.js, and Node.js. Admins can add, delete, and manage products and events.",
+      category: "",
+      client: "",
+      projectDate: "September, 2024",
+      projectUrl: ""
+    },
+    {
+      id:  5,
+      title: "Centre-Descartes",
+      pictures: [
+       
+        "/assets/img/portfolio/13.png",
+        "/assets/img/portfolio/13.png",
+        "/assets/img/portfolio/15.png",
+        "/assets/img/portfolio/16.png"
+
+      ],
+      description: "Developed and deployed a modern, responsive website for Centre Descartes, optimizing user experience and performance across devices.",
+      category: "",
+      client: "Centre Descartes",
+      projectDate: "October, 2024",
+      projectUrl: "https://singular-cascaron-adc69f.netlify.app/"
+    } ];
 
   const swiperRef = useRef(null);
 
