@@ -6,7 +6,7 @@ import 'swiper/css/bundle';
 
 function PortfolioDetails() {
   const { projectId } = useParams();
-  
+
   // Define the projects array (consider moving this to a separate JSON file or API)
   const projects = [
     {
@@ -24,7 +24,7 @@ function PortfolioDetails() {
       projectDate: "01 January, 2024",
       projectUrl: "https://eco-ride-electric-scooter.netlify.app/"
     },
-    // Other projects ...
+    // Add other projects here...
   ];
 
   const swiperRef = useRef(null);
@@ -81,6 +81,7 @@ function PortfolioDetails() {
                   <img 
                     src={picture} 
                     loading="lazy" // Lazy loading for performance
+                    alt={`Slide ${picIndex + 1} of ${project.title}`} // Improved alt text
                   />
                 </SwiperSlide>
               ))}

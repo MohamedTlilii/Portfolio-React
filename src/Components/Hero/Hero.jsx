@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import './style.css';
 
 function Hero({ activeSection }) {
-  const words = ['Developer', 'Freelancer'];
+  // Memoizing the words array to avoid unnecessary re-renders
+  const words = useMemo(() => ['Developer', 'Freelancer'], []);
   const [currentWord, setCurrentWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -13,7 +14,9 @@ function Hero({ activeSection }) {
     const handleTyping = () => {
       const fullWord = words[wordIndex];
       setCurrentWord((prev) =>
-        isDeleting ? fullWord.substring(0, prev.length - 1) : fullWord.substring(0, prev.length + 1)
+        isDeleting
+          ? fullWord.substring(0, prev.length - 1)
+          : fullWord.substring(0, prev.length + 1)
       );
 
       if (!isDeleting && currentWord === fullWord) {
@@ -30,17 +33,17 @@ function Hero({ activeSection }) {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [currentWord, isDeleting, typingSpeed, wordIndex, words]); // Added words
+  }, [currentWord, isDeleting, typingSpeed, wordIndex, words]);
 
   return (
     <section id="hero" className={`hero section ${activeSection === 'hero' ? 'active' : ''}`}>
       <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-      <dotlottie-player 
-        src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json" 
-        background="transparent" 
-        speed="1" 
-        loop 
-        autoplay 
+      <dotlottie-player
+        src="https://lottie.host/8534f3f5-11e4-462e-acaf-4c172ed8b8b8/piiDlJhwvl.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
       />
       <div className="container" data-aos="zoom-out">
         <div className="row justify-content-center">
