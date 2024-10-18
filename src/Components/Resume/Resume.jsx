@@ -1,10 +1,6 @@
 import React from 'react';
 import './style.css';
-<<<<<<< HEAD
-// 
-=======
 
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
 function Resume() {
   return (
     <section id="resume" className="resume section">
@@ -26,11 +22,7 @@ function Resume() {
               <ul>
                 <li>Tunisia</li>
                 <li>+216 29 572 401</li>
-<<<<<<< HEAD
-                <li>tlilimohameddev@hotmail.com</li>
-=======
                 <li>Mohamedtlili1995@hotmail.com</li>
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
               </ul>
             </div>
 
@@ -55,24 +47,11 @@ function Resume() {
             
 
             <div className="resume-item">
-<<<<<<< HEAD
-              <h4>Full-stack Developer
-              </h4>
-              <h5>August 2024 - Present</h5>
-              <p><em>Karriery</em></p>
-              <ul>
-                <li>Built an admin dashboard for managing car listings using React, TypeScript, Node.js, and NestJS.</li>
-                <li>Ensured a responsive design for enhanced user experience.
-                </li>
-                <li>Developed and deployed a modern, responsive website for Centre Descartes.</li>
-                {/* <li></li> */}
-=======
               <h4>Front-End Developer</h4>
               <h5>August 2024 - Present</h5>
               <p><em>Karriery</em></p>
               <ul>
                 <li>Collaborate on tasks via Microsoft Teams platform to improve and optimize the user interface, ensuring a seamless and visually appealing experience.</li>
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
                 {/* <li>Developed a responsive portfolio</li>
                 <li>Developed a responsive portfolio React</li>
                 <li>Learned Angular TypeScript, Nest.js, PostgresSQL</li> */}
@@ -90,19 +69,10 @@ function Resume() {
               <h5>May 2024-August 2024</h5>
               <p><em>Karriery</em></p>
               <ul>
-<<<<<<< HEAD
-                <li>Enhanced problem-solving skills.</li>
-                <li>Developed a responsive portfolio.</li>
-                <li>Created a website for YTS movie torrents.
-                </li>
-                <li>Learned Angular, TypeScript, Nest.js, and PostgreSQL.
-                </li>
-=======
                 <li>Enhanced problem-solving skills</li>
                 <li>Developed a responsive portfolio</li>
                 <li>Developed a responsive portfolio React</li>
                 <li>Learned Angular TypeScript, Nest.js, PostgresSQL</li>
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
                 {/* <li>Recommended and consulted with clients on the most appropriate graphic design</li> */}
                 
               </ul>
@@ -119,5 +89,3 @@ function Resume() {
     </section>
   );
 }
-
-export default Resume;
