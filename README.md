@@ -122,17 +122,17 @@ Here are some screenshots from my portfolio:
 
 ### Services Section
 
-![Services](assets/Ss/14.png)
-![Services](assets/Ss/15.png)
-![Services](assets/Ss/16.png)
-![Services](assets/Ss/17.png)
+![Services](/public/assets/Ss/14.png)
+![Services](/public/assets/Ss/15.png)
+![Services](/public/assets/Ss/16.png)
+![Services](/public/assets/Ss/17.png)
 
 
 
 
 ### Contact Form
 
-![Experience](assets/Ss/18.png)
+![Experience](/public/assets/Ss/18.png)
 
 Feel free to browse through the screenshots to get a visual overview of my portfolio project.
 
