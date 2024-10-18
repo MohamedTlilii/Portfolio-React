@@ -111,29 +111,28 @@ Here are some screenshots from my portfolio:
 ### Portfolio Section
 
 ![Portfolio](/public/assets/Ss/6.png)
-![Portfolio](/public/assets/Ss/6.1.png)
-![Portfolio](/public/assets/Ss/6.2.png)
-![Portfolio](/public/assets/Ss/6.3.png)
-![Portfolio](/public/assets/Ss/6.4.png)
-<<<<<<< HEAD
+![Portfolio](/public/assets/Ss/7.png)
+![Portfolio](/public/assets/Ss/8.png)
+![Portfolio](/public/assets/Ss/9.png)
+![Portfolio](/public/assets/Ss/10.png)
+![Portfolio](/public/assets/Ss/11.png)
+![Portfolio](/public/assets/Ss/12.png)
+![Portfolio](/public/assets/Ss/13.png)
+
 
 ### Services Section
 
-![Services](assets/Ss/7.png)
-=======
-![Portfolio](/public/assets/Ss/6.5.png)
+![Services](assets/Ss/14.png)
+![Services](assets/Ss/15.png)
+![Services](assets/Ss/16.png)
+![Services](assets/Ss/17.png)
 
-### Services Section
 
-![Services](/public/assets/Ss/7.png)
->>>>>>> f8defd08c92549671aba33660daee2f51eec006f
-![Services](/public/assets/Ss/7.1.png)
-![Services](/public/assets/Ss/7.2.png)
-![Services](/public/assets/Ss/7.3.png)
+
 
 ### Contact Form
 
-![Experience](/public/assets/Ss/8.png)
+![Experience](assets/Ss/18.png)
 
 Feel free to browse through the screenshots to get a visual overview of my portfolio project.
 
