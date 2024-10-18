@@ -142,6 +142,6 @@ Feel free to browse through the screenshots to get a visual overview of my portf
 
 Feel free to reach out to me through the following channels:
 
-- Email: Mohamedtlili1995@hotmail.com
+- Email: tlilimohameddev@hotmail.com
 - LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/mohamed-tlili-959a6917b/)
 
