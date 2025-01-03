@@ -18,7 +18,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/3.jpg",
         "/assets/img/portfolio/4.jpg"
       ],
-      description: "Developed a website using the MERN stack, including user and admin panels.",
+      description: "Developed a final project at Gomycode under the guidance of Mohamed Anwer Jabri. Built a website using React and JavaScript with user and admin panels. Users can place and track orders, while admins manage products and view orders.",
       category: "E-Commerce",
       client: "Final Project",
       projectDate: "January, 2024",
@@ -35,7 +35,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/8.avif"
 
       ],
-      description: "Built a website for an ambient lighting service using the MERN stack. It features user and admin panels, allowing users to place and track orders while admins manage products.",
+      description: "Developed a website for an ambient lighting service using the MERN stack, featuring user and admin panels. Users can place and track orders, while admins manage products efficiently.",
       category: "E-Commerce",
       client: "LEDJO Company",
       projectDate: "March , 2024",
@@ -52,7 +52,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/12.png"
 
       ],
-      description: "Created a YTS Movies Torrents website using the MERN stack (MongoDB, Express, React, Node.js), with Chakra UI and SASS for styling. Users can download movies in various qualities with a user-friendly interface.",
+      description: "Cloned the YTS Movies Torrents platform, replicating its functionality for downloading movies in 720p, 1080p, and 3D quality. Implemented advanced filtering and search features to deliver a smooth user experience.",
       category: "",
       client: "",
       projectDate: "July, 2024",
@@ -69,7 +69,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/5.png"
 
       ],
-      description: "Developed an admin dashboard for a car rental service using React, TypeScript, Nest.js, and Node.js. Admins can add, delete, and manage products and events.",
+      description: "Developed an admin dashboard for a car rental platform to manage vehicle listings, rental schedules, and operations. Features include FullCalendar for scheduling and Bootstrap, Semantic UI, and Sass for a clean UI. Built with React.js, TypeScript, and NestJS for a responsive and scalable solution.",
       category: "",
       client: "",
       projectDate: "September, 2024",
@@ -86,7 +86,7 @@ function PortfolioDetails() {
         "/assets/img/portfolio/16.png"
 
       ],
-      description: "Developed and deployed a modern, responsive website for Centre Descartes, optimizing user experience and performance across devices.",
+      description: "Redesigned the Centre Descartes Soutien Scolaire website to be more accessible, user-friendly, and visually modern.",
       category: "",
       client: "Centre Descartes",
       projectDate: "October, 2024",
@@ -216,3 +216,4 @@ function PortfolioDetails() {
 }
 
 export default PortfolioDetails;
+
