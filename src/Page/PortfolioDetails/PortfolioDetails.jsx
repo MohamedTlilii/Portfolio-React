@@ -216,4 +216,3 @@ function PortfolioDetails() {
 }
 
 export default PortfolioDetails;
-
