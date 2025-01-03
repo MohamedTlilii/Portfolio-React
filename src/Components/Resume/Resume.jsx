@@ -46,25 +46,23 @@ function Resume() {
 
             <div className="resume-item">
               <h4>Full-stack Developer</h4> {/* Adjusted title here */}
-              <h5>August 2024 - Present</h5>
+              <h5>October 2024 - December 2024</h5>
               <p><em>Karriery</em></p>
               <ul>
-                <li>Built an admin dashboard for managing car listings using React, TypeScript, Node.js, and NestJS.
+                <li>Developed the Best-Car Admin Dashboard using React.js, ensuring high performance, scalability, and a user-centric design.
                 </li>
-                <li>Rebuild website for Centre Descartes Soutien Scolaire.
+                <li>Redesigned the Centre Descartes Soutien Scolaire website to be more accessible, user-friendly, and visually modern.
                 </li>
               </ul>
             </div>
             
             <div className="resume-item">
               <h4>FullStack Intern</h4>
-              <h5>May 2024 - August 2024</h5>
+              <h5>May 2024 - October 2024</h5>
               <p><em>Karriery</em></p>
               <ul>
-                <li>Developed a responsive portfolio</li>
-                <li>Learned Angular, TypeScript, Nest.js, and PostgreSQL</li>
-                <li>Created a website for YTS movie torrents.
-                </li>
+                <li>Designed and developed a responsive personal portfolio, effectively showcasing a diverse range of projects and technical skills.</li>
+                <li>Cloned the YTS Movies Torrents platform, replicating its functionality for downloading movies in 720p, 1080p, and 3D quality. Implemented advanced filtering and search features to deliver a smooth user experience.</li>
               </ul>
             </div>
           </div>
@@ -77,3 +75,4 @@ function Resume() {
 }
 
 export default Resume;
+
