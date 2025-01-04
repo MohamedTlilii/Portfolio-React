@@ -9,26 +9,30 @@ import './style.css';
 import { useLocation } from 'react-router-dom';
 
 const navItems = [
-  { id: 'hero', label: 'Home', icon: <FaHome />, href: '/#' },
-  { id: 'about', label: 'About', icon: <GrUserManager />, href: '/#about' },
-  { id: 'resume', label: 'Resume', icon: <FaFileAlt />, href: '/#resume' },
-  { id: 'portfolio', label: 'Portfolio', icon: <AiFillPicture />, href: '/#portfolio' },
-  { id: 'services', label: 'Services', icon: <GrServices />, href: '/#services' },
-  { id: 'contact', label: 'Contact', icon: <MdEmail />, href: '/#contact' },
+  { id: 'hero', label: 'Home', icon: <FaHome />, href: '#' },
+  { id: 'about', label: 'About', icon: <GrUserManager />, href: '#about' },
+  { id: 'resume', label: 'Resume', icon: <FaFileAlt />, href: '#resume' },
+  { id: 'portfolio', label: 'Portfolio', icon: <AiFillPicture />, href: '#portfolio' },
+  { id: 'services', label: 'Services', icon: <GrServices />, href: '#services' },
+  { id: 'contact', label: 'Contact', icon: <MdEmail />, href: '#contact' },
 ];
 
 function Header({ activeSection, setActiveSection }) {
   const [navVisible, setNavVisible] = useState(false);
-  const { pathname, hash } = useLocation();
+  const { hash } = useLocation();
 
   const toggleNav = () => {
     setNavVisible(!navVisible);
   };
 
   useEffect(() => {
-    const div = hash.slice(1);
-    setActiveSection(div);
-  }, [hash, setActiveSection]);
+    if (hash) {
+      const targetElement = document.getElementById(hash.replace('#', ''));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
 
   return (
     <header id="header" className={`header d-flex flex-column justify-content-center ${navVisible ? 'header-show' : ''}`}>
@@ -38,13 +42,14 @@ function Header({ activeSection, setActiveSection }) {
       <nav id="navmenu" className={`navmenu ${navVisible ? 'visible' : ''}`}>
         <ul>
           {navItems.map(({ id, label, icon, href }) => (
-            <li key={id} className={activeSection === id && pathname === '/' && id === 'hero' ? 'active' : ''}>
+            <li key={id} className={activeSection === id && hash === '' && id === 'hero' ? 'active' : ''}>
               <a
-                href={href}
+                href={href} // Use href with section IDs as hash links
                 onClick={(e) => {
                   e.preventDefault(); // Prevent default anchor behavior
                   setActiveSection(id);
                   if (navVisible) toggleNav(); // Close nav on item click
+                  window.location.hash = href; // Change the URL hash
                 }}
                 aria-label={`Go to ${label}`}
               >
