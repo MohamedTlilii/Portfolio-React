@@ -29,7 +29,7 @@ function PortfolioDetails() {
       title: "LEDJO",
       pictures: [
        
-        "/assets/img/portfolio/5.avif",
+        "/assets/img/portfolio/5.jpg",
         "/assets/img/portfolio/6.avif",
         "/assets/img/portfolio/7.avif",
         "/assets/img/portfolio/8.avif"
@@ -81,7 +81,7 @@ function PortfolioDetails() {
       pictures: [
        
         "/assets/img/portfolio/13.png",
-        "/assets/img/portfolio/13.png",
+        "/assets/img/portfolio/14.png",
         "/assets/img/portfolio/15.png",
         "/assets/img/portfolio/16.png"
 
@@ -90,6 +90,7 @@ function PortfolioDetails() {
       category: "",
       client: "Centre Descartes",
       projectDate: "October, 2024",
+      
       projectUrl: "https://singular-cascaron-adc69f.netlify.app/"
     } ];
 
