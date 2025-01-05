@@ -43,7 +43,7 @@ function Services() {
               </a>
               <p>
                 Creation of responsive and dynamic websites using HTML, CSS, and JavaScript. Use of modern
-                frameworks and libraries such as React, Angular.
+                frameworks and libraries such as React.
               </p>
             </div>
           </div>
